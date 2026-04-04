@@ -38,11 +38,18 @@
         </div>
 
         <div id="answerArea" class="answer-area hidden">
-          <div class="answer-box">
-            <p><strong>変格活用:</strong> <span id="answerConjugation"></span></p>
-            <p><strong>意味:</strong> <span id="answerMeaning"></span></p>
+          <div class="answer-box vertical-answer-box">
+            <div class="answer-column">
+              <div class="answer-label">変格活用</div>
+              <div id="answerConjugation" class="vertical-answer-text"></div>
+            </div>
+              
+            <div class="answer-column">
+              <div class="answer-label">意味</div>
+              <div id="answerMeaning" class="vertical-answer-text"></div>
+            </div>
           </div>
-
+          
           <div class="button-group vertical">
             <button id="correctButton">正解した</button>
             <button id="wrongButton" class="danger">間違えた</button>
