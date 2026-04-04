@@ -108,8 +108,39 @@ button.danger {
   border: 1px solid #ddd;
 }
 
-.answer-box p {
+.vertical-answer-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 24px;
+  min-height: 260px;
+}
+
+.answer-column {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.answer-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 22px;
+  font-weight: bold;
   line-height: 1.8;
+}
+
+.vertical-answer-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 28px;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+  white-space: pre-wrap;
+  max-height: 240px;
 }
 
 .history-list {
@@ -166,6 +197,20 @@ button.danger {
 
   .question-area {
     min-height: 280px;
+  }
+
+  .vertical-answer-box {
+    gap: 16px;
+    min-height: 220px;
+  }
+
+  .answer-label {
+    font-size: 18px;
+  }
+
+  .vertical-answer-text {
+    font-size: 22px;
+    max-height: 200px;
   }
 
   button {
