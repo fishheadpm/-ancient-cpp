@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background: #f3f3f3;
+  color: #222;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.button-group.vertical {
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #2d6cdf;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #666;
+}
+
+button.danger {
+  background: #c0392b;
+}
+
+.quiz-top {
+  margin-bottom: 12px;
+}
+
+.progress-label {
+  color: #555;
+  font-weight: bold;
+}
+
+.question-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  margin: 20px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.vertical-question {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 34px;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+  max-height: 280px;
+}
+
+.answer-area {
+  margin-top: 16px;
+}
+
+.answer-box {
+  padding: 14px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+.answer-box p {
+  line-height: 1.8;
+}
+
+.history-list {
+  margin-top: 16px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-left {
+  flex: 1;
+}
+
+.history-word {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.history-detail {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.history-count {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.empty-message {
+  color: #666;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .vertical-question {
+    font-size: 28px;
+    max-height: 240px;
+  }
+
+  .question-area {
+    min-height: 280px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 13px 14px;
+  }
+}
